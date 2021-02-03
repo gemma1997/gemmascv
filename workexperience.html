@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+	background-color: #F8F8FF;
+	height: 2020px;
+	}
+h1{
+	color: Gray;
+    font-family: serif;
+    font-size: 300%;
+	font-weight: bold;
+    border-bottom: 6px solid LightGray;
+    padding: 10px;
+	}
+	
+div.kettle{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	left: auto;
+	width: 40%;	
+}
+div.coffee{
+	position: absolute;
+	right: 100px;	
+}
+div.logo{
+	position: absolute;
+	right: 100px;
+	-ms-transform: rotate(20deg); /* IE 9 */
+	transform: rotate(20deg);
+	top: 370px;
+}
+
+#c{
+	border-radius: 40%;
+	width: 50%;
+}
+#l{
+	border-radius: 60%;
+	width: 110%;	
+}
+div.house{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	right: 100px;
+	width: 40%;	
+	top: 600px;
+}
+#h{
+	border-radius: 40%;
+	width: 70%;
+}
+div.hh{
+	position: absolute;
+	left: auto;
+	width: 40%;	
+	top: 700px;
+}
+div.bre{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	left: auto;
+	width: 40%;	
+	top: 1040px;
+}
+div.bren{
+	position: absolute;
+	right: 200px;	
+	top:1090px;
+}
+#b{
+	border-radius: 60%;
+	width: 110%;	
+}
+div.chinese{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	right: 100px;
+	width: 40%;	
+	top: 1460px;
+}
+div.chin{
+	position: absolute;
+	left: auto;	
+	top:1470px;
+}
+#o{
+	border-radius: 60%;
+	width: 80%;	
+}
+h4{
+	color: Gray;
+    font-family: serif;
+    font-size: 150%;
+	font-weight: bold;
+	}
+div.ref{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	right: 600px;
+	width: 25%;	
+	top: 1900px;
+}
+/* Navbar container */
+.navbar{
+  overflow: hidden;
+  background-color: LightGray;
+  font-family: courier;
+	}
+
+/* Links inside the navbar */
+.navbar a{
+  float: left;
+  font-size: 16px;
+  color: #FFE4C4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	}
+
+/* The dropdown container */
+.dropdown{
+  float: left;
+  overflow: hidden;
+	}
+
+/* Dropdown button */
+.dropdown .dropbtn{
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+	}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: red;
+	}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+	}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+  background-color: #ddd;
+	}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+  display: block;
+	}
+	
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 25px;
+   background-color: LightGray;
+   color: Black;
+   font-family: georgia;
+   font-size: 50%;
+	font-weight: solid;
+	  word-spacing: 1cm;
+	  text-align: center;
+}
+
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemma CV</title>
+</head>
+<body>
+<div class="top" id="top">
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="education.html"> Education </a>
+      <a href="skills.html"> Key Skills & Competencies </a>
+	  <a href="academicprojects.html"> Selected Academic Projects </a>
+	  <a href= "index.html"> Home </a>
+	  <a href="hobbies.html"> Hobbies </a>
+    </div>
+  </div>
+</div>
+<!--chosing to either login or sign up-->
+<h1 style="text-align:center"> Gemma Staunton - Work Experience</h1>
+</div>
+<div class="kettle" id="kettle">
+<h2>Supervisor – Kettle Café Jun 2018 – Dec 2020 KEY RESPONSIBILITIES & ACHIEVEMENTS</h2>
+<p>▪ Supervised activities in the kitchen to ensure customer food was prepared to a high-standard.<br><br>
+ ▪ Led and motivated staff teams to ensure high-levels of customer service and ensured store<br><br>
+ cleanliness at all times.<br><br>
+ ▪ Acted as the first point of contact to resolve any customer complaints / issues.<br><br>
+▪ Assisted management in implementing campaigns for marketing and promotion.<br><br>
+▪ Dealt with all aspects of cash handling and end of day cash ups / reconciliations.<br><br>
+▪ Generated weekly rosters in a timely manner based on forecasted customer demand.<br><br>
+▪ Provided on-the-job practical training to staff in order to continually strive for improvement<br>
+ and service excellence.<br><br>
+ ▪ Managed staff holiday, sickness and absence in line with company procedures and protocols.<br><br>
+ ▪ Ensured strict adherence of Health and Safety guidelines for business compliance. </p>
+</div>
+<div class="k" id="k">
+<div class="coffee" id="coffee">
+<img src="coffee.jpg" id="c">
+</div>
+<div class="logo" id="logo">
+<img src="logo.png" id="l">
+</div>
+</div>
+<div class="house" id="house">
+<h2>Senior Waitress – House Hotel Jun 2016 – May 2018 KEY RESPONSIBILITIES & ACHIEVEMENTS </h2>
+<p>▪ Liaised with Managers and performed all duties to provide the highest customer service standards<br>
+in the hotel. <br><br>
+▪ Managed teams of Waiters / Waitresses to serve food and beverages within required timeframes.<br><br>
+▪ Scheduled table bookings during busy periods and coordinated customer queues / waiting times effectively.<br><br>
+▪ Ensured best practice procedures were adhered to by staff and identified any improvements required. <br><br>
+▪ Handled customer complaints in an effective and professional manner through to resolution. <br><br>
+▪ Troubleshooted operational issues and escalated with senior management if required.<br><br>
+▪ Trained new Waiters / Waitresses on guest service expectations, procedures, food handling techniques and <br>
+establishment standards. </p>
+</div>
+<div class="hh" id="hh">
+<img src="house.jpg" id="h">
+</div>
+<div class="bre" id="bre">
+<h2>Sales Assistant – Brennen’s Shoe Specialist Aug 2015 – Jan 2016 KEY RESPONSIBILITIES &
+ACHIEVEMENTS</h2>
+<p>▪ Understood customer requirements and provided appropriate advice and guidance on products <br>
+in-store. <br><br>
+▪ Held responsibility for operating till systems, serving customers and handling payments.<br><br>
+▪ Consistently strived to overachieve sales targets as per the needs of the store and business.<br><br>
+▪ Developed and used extensive product knowledge to maximise and drive sales growth. <br><br>
+▪ Maintained upkeep of the retail unit to an exceptional level, reflecting a positive image of the company. 
+▪ Ensured operations were carried out to the highest possible standard and maintained compliance<br> 
+with H&S policies. </p>
+</div>
+<div class="bren" id="bren">
+<img src="brennens.jpg" id="b">
+</div>
+<div class="chinese" id="chinese">
+<h2>Waitress / Receptionist – Ocean Palace Chinese Restaurant Nov 2013 – Aug 2015 KEY RESPONSIBILITIES &
+ACHIEVEMENTS </h2>
+<p>▪ Delivered an outstanding food and beverage service to customers at all times in line with brand <br>
+expectations. <br><br>
+▪ Took orders from customers and offered advice on the menu including suggestions to compliment choices. <br><br>
+▪ Undertook regular checks on tables to cater for additional customer requirements.<br><br>
+▪ Prepared accurate bills, presented to customers and processed payments.<br><br>
+▪ Kept the work and surrounding area clean and organised at all times. </p>
+</div>
+<div class="chin" id="chin">
+<img src="ocean.jpg" id="o">
+</div>
+<div class="ref" id="ref">
+<h4>References available upon request.</h4>
+</div>
+<div class="footer">
+  <h3>Contact: Email- gemma.staunton2014@gmail.com  Phone- 07915472389</h3>
+</div>
+</body>
+</html>

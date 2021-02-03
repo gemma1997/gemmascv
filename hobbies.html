@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+	background-color: #F8F8FF;
+	height: 900px;
+	}
+h1{
+	color: Gray;
+    font-family: serif;
+    font-size: 300%;
+	font-weight: bold;
+    border-bottom: 6px solid LightGray;
+    padding: 10px;
+	}
+h2{
+	color: Gray;
+    font-family: serif;
+    font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+   
+	}
+	
+h3{
+	color: Gray;
+    font-family: serif;
+    font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+   
+	}
+		
+h4{
+	color: Gray;
+    font-family: serif;
+    font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+   
+	}
+div.music{
+	position: absolute;
+	left: auto;
+	width: 60%;	
+	-ms-transform: skewY(20deg); /* IE 9 */
+	transform: skewY(20deg);
+	top: 280px;
+}
+div.ms{
+	font-family: serif;
+    font-size: 100%;
+	font-weight: bold;
+	border: inset;
+	position: absolute;
+	left: auto;
+	width: 40%;	
+	top: 530px;
+}
+div.read{
+	position: absolute;
+	right: 100px;
+	width: 40%;
+	-ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
+  top: 310px;
+}
+div.bs{
+	font-family: serif;
+    font-size: 100%;
+	font-weight: bold;
+	border: inset;
+	position: absolute;
+	right: 100px;
+	width: 40%;	
+	top: 590px;
+}
+div.ball{
+	position: absolute;
+	left: auto;
+	width: 60%;	
+	top: 490px;
+	 -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
+  top: 800px;
+}
+
+div.es{
+	font-family: serif;
+    font-size: 100%;
+	font-weight: bold;
+	border: inset;
+	position: absolute;
+	right: 100px;
+	width: 40%;	
+	top: 900px;
+}
+/* Navbar container */
+.navbar{
+  overflow: hidden;
+  background-color: LightGray;
+  font-family: courier;
+	}
+
+/* Links inside the navbar */
+.navbar a{
+  float: left;
+  font-size: 16px;
+  color: #FFE4C4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+	}
+
+/* The dropdown container */
+.dropdown{
+  float: left;
+  overflow: hidden;
+	}
+
+/* Dropdown button */
+.dropdown .dropbtn{
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+	}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: red;
+	}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+	}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+  background-color: #ddd;
+	}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+  display: block;
+	}
+	
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 28px;
+   background-color: LightGray;
+   color: Black;
+   font-family: georgia;
+   font-size: 70%;
+	font-weight: solid;
+	  word-spacing: 1cm;
+	  text-align: center;
+}
+#g{
+	border-radius: 8px;
+	width: 50%; 	
+}
+#r{
+	border-radius: 8px;
+	width: 50%; 	
+}
+#b{
+	border-radius: 8px;
+	width: 50%; 	
+}
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemma CV</title>
+</head>
+<body>
+<div class="top" id="top">
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="education.html"> Education </a>
+      <a href="skills.html"> Key Skills & Competencies </a>
+	  <a href="academicprojects.html"> Selected Academic Projects </a>
+	  <a href= "workexperience.html"> Work Experience </a>
+	  <a href="index.html"> Home </a>
+    </div>
+  </div>
+</div>
+<!--chosing to either login or sign up-->
+<h1 style="text-align:center"> Gemma Staunton - Hobbies </h1>
+</div>
+<div class="music" id="music"> 
+<h2>Music</h2>
+<img src="guitar.jpg" id="g">
+</div>
+<div class="ms" id="ms">
+<p>One of the ways I have learned to destress is from playing my guitar.<br>
+I have played since I was around 8 years old. It was my grandmother who <br>
+started to show me and ended up going to lessons and ended up loving it.<br>
+She always stated that no matter what happends in life that playing is <br>
+something that can never be taken away.</p>
+</div>
+<div class="read" id="read"> 
+<h3>Reading</h3>
+<img src="book.jpg" id="r">
+</div>
+<div class="bs" id="bs">
+<p>I loved reading romance and fantasy novels or short stories. I prefer to<br>
+read online books as I don't really like to put a book down once I've started.<br>
+I loved authors like Sawyer Bennett.</p>
+</div>
+<div class="ball" id="ball"> 
+<h4>Exercise</h4>
+<img src="exercise.jpg" id="b">
+</div>
+<div class="es" id="es">
+<p>Ever since I was young I haved loved exercise. I played soccer as a goalie up until<br>
+I was 18. Tried doing it in college but had too many courses to keep up with.<br>
+So I started going to the Gym and doing Zumba classes and loved it. I enjoy<br>
+working out and being healthly. 
+</p>
+</div>
+<div class="footer">
+  <h5>Contact: Email- gemma.staunton2014@gmail.com  Phone- 07915472389</h5>
+</div>
+</body>
+</html>

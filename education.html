@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+	background-color: #F8F8FF;
+	height: 900px;
+	}
+h1{
+	color: Gray;
+    font-family: serif;
+    font-size: 300%;
+	font-weight: bold;
+    border-bottom: 6px solid LightGray;
+    padding: 10px;
+	}
+div.under{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	left: auto;
+	width: 40%;	
+}
+
+div.post{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	right: 100px;
+	width: 40%;
+	}
+	
+div.modules{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	left: auto;
+	width: 40%;
+	top: 70%;
+	height:280px;
+	
+}
+
+div.j{
+
+	position: absolute;
+	right: 0px;
+	top: 70%;
+	
+}
+
+/* Navbar container */
+.navbar{
+  overflow: hidden;
+  background-color: LightGray;
+  font-family: courier;
+	}
+
+/* Links inside the navbar */
+.navbar a{
+  float: left;
+  font-size: 16px;
+  color: #FFE4C4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+	}
+
+/* The dropdown container */
+.dropdown{
+  float: left;
+  overflow: hidden;
+	}
+
+/* Dropdown button */
+.dropdown .dropbtn{
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+	}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: red;
+	}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+	}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+  background-color: #ddd;
+	}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+  display: block;
+	}
+	
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 25px;
+   background-color: LightGray;
+   color: Black;
+   font-family: georgia;
+   font-size: 50%;
+	font-weight: solid;
+	  word-spacing: 1cm;
+	  text-align: center;
+}
+#nui{
+	border-radius: 8px;
+	width: 50%; 
+	height: 110px;
+}
+#j{
+	border-radius: 8px;
+	width: 50%; 
+}
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemma CV</title>
+</head>
+<body>
+<div class="top" id="top">
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="index.html"> Home </a>
+      <a href="skills.html"> Key Skills & Competencies </a>
+	  <a href="academicprojects.html"> Selected Academic Projects </a>
+	  <a href= "workexperience.html"> Work Experience </a>
+	  <a href="hobbies.html"> Hobbies </a>
+    </div>
+  </div>
+</div>
+
+<h1 style="text-align:center"> Gemma Staunton - Education</h1>
+</div>
+<div class="logo" id="logo">
+	<img src="nuilogo.jpg" id="nui">
+</div>
+<div class="under" id="under">
+	<h4>Undergraduate Degree</h4>
+	<h5>Bachelor of Arts (Joint-Honours) in Information Technology and Geography</h5>
+	<h6>2015-2019</h6>
+</div>
+<div class="post" id="post">
+	<h4>Higher Diploma</h4>
+	<h5>Higher Diploma in Software Design & Development</h5>
+	<h6>2019-2020</h6>
+</div>
+<div class="modules" id="modules">
+	<h2>Modules</h2>
+  <ul>
+  <li>Internet Programming</li>
+  <li> Computing Architecture & Operating Systems</li>
+  <li>Programming 1</li>
+  <li>Enterprise Java Programming</li>
+  <li>Object Oriented Programming (Java)</li>
+  <li>Algorithmics & Logical Methods</li>
+  <li>Artificial Intelligence</li>
+  <li>Databases Systems</li>
+  <li>Software Engineering 1</li>
+  <li>Object Oriented Software Design & Development</li>
+</ul>
+</div>
+
+<div class="j" id="j">
+	<img src="java.jpg" id="j">
+</div>
+<div class="footer">
+  <h3>Contact: Email- gemma.staunton2014@gmail.com  Phone- 07915472389</h3>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+	background-color: #F8F8FF;
+	height: 900px;
+	}
+h1{
+	color: Gray;
+    font-family: serif;
+    font-size: 300%;
+	font-weight: bold;
+    border-bottom: 6px solid LightGray;
+    padding: 10px;
+	}
+div.skills{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	left: auto;
+	width: 40%;	
+}
+
+div.chart{
+	border: inset;
+	background-color: LightGray;
+	position: absolute;
+	right: 100px;	
+}
+
+/* Navbar container */
+.navbar{
+  overflow: hidden;
+  background-color: LightGray;
+  font-family: courier;
+	}
+
+/* Links inside the navbar */
+.navbar a{
+  float: left;
+  font-size: 16px;
+  color: #FFE4C4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+	}
+
+/* The dropdown container */
+.dropdown{
+  float: left;
+  overflow: hidden;
+	}
+
+/* Dropdown button */
+.dropdown .dropbtn{
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+	}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: red;
+	}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+	}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+  background-color: #ddd;
+	}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+  display: block;
+	}
+	
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 25px;
+   background-color: LightGray;
+   color: Black;
+   font-family: georgia;
+   font-size: 50%;
+	font-weight: solid;
+	  word-spacing: 1cm;
+	  text-align: center;
+}
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemma CV </title>
+</head>
+<body>
+<div class="top" id="top">
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+    <a href="education.html"> Education </a>
+      <a href="index.html"> Home </a>
+	  <a href="academicprojects.html"> Selected Academic Projects </a>
+	  <a href= "workexperience.html"> Work Experience </a>
+	  <a href="hobbies.html"> Hobbies </a>
+    </div>
+  </div>
+</div>
+<h1 style="text-align:center"> Gemma Staunton - Key Skills & Competencies </h1>
+</div>
+<div class="skills" id="skills">
+<p>▪ Deep understanding of software development phases including requirements elicitation, specification, design,
+development, validation / testing and documentation.<br><br>
+▪ Strong knowledge of JavaScript, HTML, CSS, Bootstrap, Angular JS, Java, Bash Scripting, MySQL and Python. <br><br>
+▪ Capability to write code and develop simple, fast, standards-compliant solutions for desktop, tablet and mobile devices.<br><br> 
+▪ Well-versed in producing output which is intuitive and enables ease of use / navigation.<br><br>
+▪ Good understanding of information design and usability principles and standards, including coding to W3C standards. <br><br>
+▪ Working on projects through full lifecycles in accordance with best practice to meet all core aims / objectives. <br><br>
+▪ Rational and logical approach to problem solving – Excellent analytical, research and debugging skills. <br><br>
+▪ Highly-organised and focused on meeting task deadlines within identified time frames. <br><br>
+▪ Clear communicator with customers, colleagues and senior management to build excellent relationships. <br><br>
+▪ Good team player with an abundance of personal energy, passion and drive. </p>
+</div>
+<div class="chart" id="chart">
+</div>
+<div class="footer">
+  <h3>Contact: Email- gemma.staunton2014@gmail.com  Phone- 07915472389</h3>
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Experience'],
+  ['Java', 7],
+  ['HTML', 7],
+  ['CSS', 6],
+  ['JavaScript', 4],
+  ['PHP', 3],
+  ['Python', 2],
+  ['MySQL', 7],
+  ['Bash Scripting', 6],
+  ['Bootstrap', 3],
+  ['Angular JS', 2],
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':' How Much Experience', 'width':700, 'height':600};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.BarChart(document.getElementById('chart'));
+  chart.draw(data, options);
+}
+</script>
+</body>
+</html>
